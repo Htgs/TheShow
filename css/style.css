@@ -1,0 +1,293 @@
+/*
+ *
+ *	reset stylesheet and The commonly used class
+ *
+ */
+
+/*reset stylesheet*/
+*{
+	margin:0;
+	padding:0;
+	vertical-align:baseline;
+}
+html,body{
+	font-size:14px;
+	color:#333;/*The default font color page*/
+	font-family:"\5FAE\8F6F\96C5\9ED1",Arial,Verdana; /*The default font family page*/
+	-ms-text-size-adjust: 100%;
+  	-webkit-text-size-adjust: 100%;
+}
+.family-Georgia{
+	  font-family: Georgia;
+}
+.family-yahei{/*微软雅黑*/
+	  font-family: "\5FAE\8F6F\96C5\9ED1",Arial,Verdana;
+}
+.family-simsun{/*宋体*/
+	  font-family: "\5B8B\4F53";
+}
+article, aside, details,
+figcaption, figure, footer,
+header, hgroup,
+main, menu,
+nav, section, summary {
+  display: block;
+}
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+ol,
+ul {
+	list-style:none;
+	outline:none;
+	list-style-type:none;
+}
+
+small{
+	font-size:80%;
+}
+
+sub,
+sup {
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sup{
+	top:-0.25em;
+}
+
+sub{
+	bottom:-0.05em;
+}
+
+img{
+	border:0; 
+	vertical-align:middle;
+	display:inline-block;
+}
+
+pre{
+	overflow: auto;
+}
+a{ 
+	color:#3e4141;
+}
+a:focus,
+a:link,
+a{
+	text-decoration:none;
+}
+a:active,
+a:hover,
+a.hover{
+	color:#ff6900; 
+	text-decoration:underline;
+	cursor:pointer;
+}
+
+button, input, select, textarea {
+	font:1em/1.5 '\5B8B\4F53','\5FAE\8F6F\96C5\9ED1',tahoma,arial;
+	outline: 0 none; 
+	border:1px solid #ddd;
+}
+input[type="text"]{
+	height:20px;
+}
+textarea{
+	resize:vertical;
+}
+table{ 
+	border-collapse:collapse; 
+	border-spacing:0px; 
+	width:100%; 
+	font-size:1em;
+}
+table td,
+table th{ 
+	vertical-align:middle; 
+	font-weight:normal;
+}
+a:active,
+a:hover {
+	text-decoration: none;
+}
+
+/*=================================================
+ *	The commonly used class
+ */
+/*Some commonly used class*/
+.pull-right{
+	float:right !important;
+}
+
+.pull-none{ 
+	float:none !important;
+}
+
+.text-center{
+	text-align:center;
+}
+
+.text-left{ 
+	text-align:left !important;
+}
+
+.text-right{
+	text-align:right;
+}
+.dl,.relative{
+	position:relative;
+	zoom:1;
+}
+
+.absolute{
+	position:absolute;
+	zoom:1;
+}
+.bold{
+	font-weight:bold;	
+}
+.break-word{
+	word-wrap: break-word; 
+	word-break:break-all;
+}
+.overflow-hide{
+	overflow:hidden;
+}
+.no-warp{
+	white-space:nowrap;
+}
+.inline-block{ 
+	display:inline-block;
+}
+
+.inline{ 
+	display:inline;
+}
+
+.block{
+	display:block;
+}
+
+.hide{
+	display:none;
+}
+
+.clear{
+	clear:both;
+}
+
+
+/*Use opportunely clear float*/
+.clearfix::after,
+.row::after,
+.ul::after,
+.ol::after,
+.dl::after{
+	visibility:hidden;
+	display:block;
+	font-size:0;
+	content:"";
+	clear:both;
+	height:0;
+}
+.clearfix,
+.ul,.dl,.ol{
+	zoom:1;
+}
+
+.ul>li,
+.ol>li,
+.dl>dt,
+.dl>dd,
+.pull-left{
+	float:left; 
+	cursor:pointer; 
+	position:relative;
+}
+
+
+/*CSS easy making small triangle*/
+.angle{ 
+	border:0px solid transparent; 
+	display:inline-block; 
+	position:absolute;
+	width:0px; 
+	height:0px; 
+	font-size:0px;
+}
+
+.angle-top{   
+	border-bottom-style:solid; 
+	border-bottom-color:#777; 
+	border-width:6px;
+}
+
+.angle-right{ 
+	border-left-style:solid;   
+	border-left-color:#777;   
+	border-width:6px;
+}
+
+.angle-bottom{
+	border-top-style:solid;    
+	border-top-color:#777;    
+	border-width:6px;
+}
+
+.angle-left{  
+	border-right-style:solid;  
+	border-right-color:#777;  
+	border-width:6px;
+}
+
+
+/*page width*/
+.grid-1200{
+	width:1200px;
+	margin:0 auto;
+}
+.grid-990{
+	width:990px;
+	margin:0 auto;
+}
+
+
+/* page top and nav*/
+.header {
+	width: 100%;
+}
+.header h1 {
+	float: left;
+	height: 96px;
+	text-indent: -99999px;
+	width: 100%;
+	background-image: url(../images/logo.jpg);
+	background-repeat: no-repeat;
+	background-position: left center;	
+}
+.header-nav {
+	background-color: #1C8678;
+}
+.header-nav li {
+	float: left;
+	width: 126px;
+	height: 58px;
+	text-align: center;
+	line-height: 58px;
+}
+.header-nav li.cur {
+	background-color: #196B5D;
+}
+.header-nav li a {
+	display: block;
+	color: #fff;
+}
